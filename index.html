@@ -1,13 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC Responsiva</title>
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <main class="container">
+        <section class="image">
+            <img src="assets/images/ilustration.svg" alt="">
+        </section>
+
+        <section class="calculator">
+            <form id="form">
+                <h1 class="title">
+                    Calculator - BMI
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Weight                    </label>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                        Height </label>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="text" id="height" required>
+                        <span>m</span>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    Calculate
+                </button>
+            </form>
+
+            <div id="infos" class="hidden">
+                <div class="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Your BMI</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="more_info">
+                    <a href=""> More informations about BMI</a>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="assets/js/script.js"></script>
+
 </html>
